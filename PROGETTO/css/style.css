@@ -1,0 +1,195 @@
+html{
+	background-color: #fff;
+}
+
+body{
+	background-color: #ede6e6;
+	margin: 0 auto;
+	width: 960px;
+	font-family: Prompt, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #373535;
+}
+
+
+/*HEADER*/
+
+header{
+	height: 150px;
+	padding-top: 20px;
+}
+
+ul{
+	padding: 0;
+}
+
+li{
+	display: inline;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.bordo{
+	border-right: 1px solid #838b75;
+}
+
+.left{
+	width: 320px;
+	float: left;
+}
+
+.left ul{
+	padding-left: 30px;
+	padding-top: 90px;
+}
+
+.right{
+	width: 320px;
+	float: right;
+}
+
+.right ul{
+	float: right;
+	padding-right: 30px;
+	padding-top: 90px;
+}
+
+#logo{
+	width: 320px;
+	float: left;
+	text-align: center;
+	color: #988177;
+	font-size: 32px;
+	font-family: 'Baloo Tamma', sans-serif;
+}
+
+#logo p{
+	margin: 0;
+}
+
+/* MAIN CONTENT*/
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+#main{
+	background: url(../img/tile.png);
+	background-repeat: repeat;
+	height: 250px;
+	
+}
+
+#main h1{
+	margin: 0;
+	padding-top: 40px;
+	color: #988177; 
+	text-align: center;
+}
+
+form{
+	padding-top: 50px;
+	text-align: center;
+}
+
+
+#email{
+	width: 220px;
+	height: 25px;
+	border-radius: 5px;
+	padding: 0;
+	margin-right: 10px;
+}
+
+#btn{
+
+width: 90px;
+height: 30px;
+border-radius: 5px;
+background-color: #988177;
+color: #fff;
+font-size: 13px;
+}
+	
+.box{
+	position: relative;
+	float: left;
+	margin: 15px 0;
+}
+
+.box img{
+	position: relative;
+	z-index: 1;
+	margin-left: 50px;
+}
+
+.box p{
+	position: absolute;
+	top: 12px;
+	z-index: 2;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	margin-left: 50px;	
+	background-color: rgba(152, 129, 119,0.7);
+	width: 250px;
+}
+
+
+footer{
+	text-align: center;
+	background: url(../img/tile.png);
+	height: 130px;
+	padding-top: 20px;
+	border-top: 1px dashed #838b75;
+	
+	
+}
+
+nav{
+	font-size: 16px;
+}
+
+footer li{
+	border-right: 1px dashed #988177;
+}
+
+
+#last{
+	border-right: none;
+}
+
+
+.fa{
+	color: #988177;
+	margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
