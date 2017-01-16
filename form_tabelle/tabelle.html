@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tabelle in HTML</title>
+
+<style>
+body{
+  font-family: Verdana, sans-serif;
+}
+
+table {
+  border: 2px solid;
+  border-collapse: collapse;
+}
+
+tr, td{
+border: 1px dotted;
+}
+
+.padding{
+padding: 10px;
+}
+
+#colore{
+
+  background-color: #f00b12;
+}
+
+tr:nth-child(even){
+  background-color: #ddd;
+}
+
+tr:nth-child(odd){
+  background-color: #cf0;
+}
+
+#blu{
+  background-color: #00f;
+  color: #fff;
+}
+</style>
+
+  </head>
+  <body>
+
+<!-- <h1>Esempio base di tabella</h1>
+<table>
+
+<tr>
+<td>Pesche</td>
+<td>Arance</td>
+<td>Mandarini</td>
+</tr>
+
+<tr>
+<td>Rosa</td>
+<td>Ciclamino</td>
+<td>Tulipano</td>
+</tr>
+</table>
+
+<h1>Esempio di tabella con intestazioni</h1>
+
+<table>
+<caption><h4>Intestazione sulla riga</h4></caption>
+
+<tr>
+  <th>Frutta</th>
+<td>Pesche</td>
+<td>Arance</td>
+<td>Mandarini</td>
+</tr>
+
+<tr>
+  <th>Fiori</th>
+<td>Rosa</td>
+<td>Ciclamino</td>
+<td>Tulipano</td>
+</tr>
+
+</table>
+
+<hr>
+
+<table>
+
+<caption><h4>Intestazione sulla colonna</h4></caption>
+
+<tr>
+  <th></th>
+<th>Titolo 1</th>
+<th>Titolo 2</th>
+<th>Titolo 3</th>
+</tr>
+
+<tr>
+  <th>Frutta
+  </th>
+  <td>Pesche</td>
+  <td>Arance</td>
+  <td>Mandarini</td>
+</tr>
+
+<tr>
+  <th>Fiori</th>
+<td>Rosa</td>
+<td>Ciclamino</td>
+<td>Tulipano</td>
+</tr>
+</table>
+
+<h1>Tabelle con padding</h1>
+
+<table>
+
+<caption><h4>Intestazione sulla colonna</h4></caption>
+
+<tr>
+
+<th class="padding">Titolo 1</th>
+<th class="padding">Titolo 2</th>
+<th class="padding">Titolo 3</th>
+</tr>
+
+<tr>
+
+  </th>
+  <td class="padding">Pesche</td>
+  <td class="padding">Arance</td>
+  <td class="padding">Mandarini</td>
+</tr>
+
+<tr>
+
+<td class="padding">Rosa</td>
+<td class="padding">Ciclamino</td>
+<td class="padding">Tulipano</td>
+</tr>
+</table>
+
+
+<h1>Tabella con sfondo colorato</h1>
+
+
+<table id="colore">
+
+<caption><h4>Intestazione sulla colonna</h4></caption>
+
+<tr>
+
+<th class="padding">Titolo 1</th>
+<th class="padding">Titolo 2</th>
+<th class="padding">Titolo 3</th>
+</tr>
+
+<tr></th>
+  <td class="padding">Pesche</td>
+  <td class="padding">Arance</td>
+  <td class="padding">Mandarini</td>
+</tr>
+
+<tr>
+
+<td class="padding">Rosa</td>
+<td class="padding">Ciclamino</td>
+<td class="padding">Tulipano</td>
+</tr>
+</table>
+
+<h1>Attributi rowspan e colspan</h1>
+
+<table>
+
+<caption><h4>Intestazione sulla colonna</h4></caption>
+
+<tr>
+  <th></th>
+<th colspan="2">Titolo 1</th>
+<th>Titolo 2</th>
+<th>Titolo 3</th>
+</tr>
+
+<tr>
+  <th rowspan="2">Frutta</th>
+  <td>Pesche</td>
+  <td>Arance</td>
+  <td>Mandarini</td>
+</tr>
+
+<tr>
+  <th>Fiori</th>
+<td>Rosa</td>
+<td>Ciclamino</td>
+<td>Tulipano</td>
+</tr>
+</table> -->
+
+
+<table>
+
+<caption><h4>Intestazione sulla colonna</h4></caption>
+
+<tr id="blu">
+
+<th>Titolo 1</th>
+<th>Titolo 2</th>
+<th>Titolo 3</th>
+</tr>
+
+<tr>
+
+  <td>Pesche</td>
+  <td>Arance</td>
+  <td>Mandarini</td>
+</tr>
+
+<tr>
+
+  <td>Cocco</td>
+  <td>Papaia</td>
+  <td>Albicocche</td>
+</tr>
+
+<tr>
+
+<td>Rosa</td>
+<td>Ciclamino</td>
+<td>Tulipano</td>
+</tr>
+
+<tr>
+
+<td>Violetta</td>
+<td>Orchidea</td>
+<td>Geranio</td>
+</tr>
+</table>
+
+
+  </body>
+</html>

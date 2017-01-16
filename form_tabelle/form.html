@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+
+    <style>
+body{
+  font-family: Verdana, sans-serif;
+}
+
+select{
+
+  width: 180px;
+  height: 35px;
+  color: #ff5b2b;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+select:hover, input{
+  background-color: #ddd;
+}
+
+input{
+border-radius: 6px;
+margin: 10px auto;
+
+}
+textarea{
+  width: 300px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+fieldset{
+
+  width: 400px;
+  border: 2px dashed #ff5b2b;
+  border-radius: 10px;
+}
+
+    </style>
+  </head>
+
+  <body>
+  <h1>Esempio di base</h1>
+
+  <form>
+Nome: <br>
+<input type="text" name="nome" value="Carla"><br>
+
+Cognome: <br>
+<input type="text" name="cognome" value="" placeholder="scrivi il tuo cognome">
+<br><br>
+
+<input type="submit" value="Invia">
+
+  </form>
+
+<h1>Esempio di form con textarea</h1>
+
+<form>
+<input type="text" name="nome" placeholder="tuo nome" size="40"><br><br>
+
+<input type="text" name="cognome" placeholder="tuo cognome" size="40"><br>
+
+<label>Scrivi il tuo messaggio</label><br>
+<textarea name="messaggio" rows="12"></textarea><br><br>
+
+<input type="submit" value="Invia">
+
+</form>
+
+<h1>Esempio di form con radio button</h1>
+
+<form>
+<input type="radio" name="pet" value="" checked>Cane<br>
+<input type="radio" name="pet" value="">Gatto<br>
+<input type="radio" name="pet" value="">Coniglio<br>
+<input type="submit" value="Invia">
+<input type="reset" value="Cancella">
+</form>
+
+<h1>Esempio di form con checkbox</h1>
+
+<form>
+<h4>Scegli:</h4>
+<input type="checkbox" name="fiori" value="">Rosa<br>
+<input type="checkbox" name="fiori" value="" checked>Margherita<br>
+<input type="checkbox" name="fiori" value="">Tulipano<br>
+
+<input type="checkbox" name="fiori" value="">Ciclamino<br>
+
+<input type="submit" value="Invia">
+<input type="reset" value="Cancella">
+</form>
+
+<h1>Esempio di form con select</h1>
+
+<form id="razzeGatti">
+
+<h4>Scegli la tua razza preferita</h4>
+
+<select name="gatti" id="razzeGatti">
+<option value="">Siamese</option>
+<option value="">Certosino</option>
+<option value="">Persiano</option>
+<option value="">Birmano</option>
+<option value="">Europeo</option>
+</select><br>
+
+<label>Nome</label>
+<input name="nome" type="text"><br>
+<label>Cognome</label>
+<input name="cognome" type="text"><br>
+<label>E mail</label>
+<input name="mail" type="email"><br>
+
+<input type="submit" value="Invia">
+<input type="reset" value="Cancella">
+
+</form>
+
+<h1>Esempio di form con datalist</h1>
+
+<form action="">
+<label>Scegli la tua verdura preferita</label>
+
+<input list="verdure" name="verdure">
+
+<datalist id="verdure">
+<option value="Pomodori">
+<option value="Broccoli">
+<option value="Insalata">
+<option value="Cicoria">
+</datalist>
+
+<button type="submit">Invia</button>
+
+</form>
+
+<h1>Esempio di form con fieldset</h1>
+
+<form action="">
+
+<fieldset>
+
+  <legend>Dati Utente</legend>
+  <label>Nome</label>
+  <input type="text" name="nome"><br>
+  <label>Cognome</label>
+  <input type="text" name="cognome"><br>
+  <label>Mail</label>
+  <input type="email" name="mail"><br>
+  <label>Data di nascita</label>
+  <input type="date" name="data"><br>
+
+<button type="submit">Invia</button>
+<button type="reset">Cancella</button>
+</fieldset>
+
+</form>
+
+  </body>
+
+</html>
