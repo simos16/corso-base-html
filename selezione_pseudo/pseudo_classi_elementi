@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Pseudo Classi e Pseudo Elementi</title>
+
+
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+
+     <style>
+input{
+  margin-top: 20px;
+}
+
+a{
+  font-size: 22px;
+}
+
+a:link{
+  color: red;
+}
+
+a:visited{
+  color: blue;
+}
+
+a:hover{
+  color: white;
+  background-color: grey;
+}
+
+a:active{
+  color: orange;
+}
+
+#evidenziato:hover{
+  background-color: #ccc;
+}
+
+input:focus{
+  background-color: #ddd;
+}
+
+p:first-child{
+  color: rgb(22, 68, 224);
+}
+
+p:last-child{
+  color: rgb(22, 68, 224);
+}
+
+#prima-linea::first-line{
+  font-size: 30px;
+}
+
+#prima-lettera::first-letter{
+  font-size: 30px;
+  color: red;
+  margin-right: 5px;
+}
+
+#prima-lettera::selection{
+background-color: #ccc;
+
+}
+     </style>
+ </head>
+
+ <body>
+
+<a href="https://www.css-tricks.com" target="_blank">Consigli sui CSS?</a> <br>
+
+
+<input type="text">Esempio
+
+<p id="prima-linea">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+<div>
+<p id="evidenziato">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+  nulla pariatur. Excepteur sint occaecat
+  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+  <p id="prima-lettera">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+    nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+      nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+</div>
+
+
+ </body>
+
+ </html>

@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Before e After</title>
+
+
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+
+     <style>
+
+#prima::before{
+content: url(immagini/gatto-nero.jpg);
+}
+
+#dopo::after{
+content: url(immagini/gatto-nero.jpg);
+}
+
+a::before{
+  content: url(immagini/cyber-owl.jpg);
+}
+
+p::after{
+  content: "@";
+  font-size: 18px;
+  background-color: blue;
+  color: #fff;
+  margin-left: 5px;
+}
+
+p::before{
+  content: "Contenuto generato";
+}
+
+#contenuto::after{
+  content: "Contenuto generato";
+margin-left: 10px;
+}
+
+
+
+     </style>
+ </head>
+
+ <body>
+
+<a href="http://www.google.it" target="_blank">Cerca su Google</a><br>
+
+
+<input type="text">Esempio
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+<div>
+
+<h1 id="contenuto">Esempio</h1>
+  <h1 id="dopo">Contenuto After</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+  nulla pariatur. Excepteur sint occaecat
+  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <h1 id="prima">Contenuto Before</h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+    nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+      nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+</div>
+
+
+ </body>
+
+ </html>

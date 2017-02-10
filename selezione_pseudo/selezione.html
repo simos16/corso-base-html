@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>SELEZIONE</title>
+
+
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+
+<style>
+
+.generale{
+  color: #00f;
+}
+
+.grande{
+  font-size: 32px;
+}
+
+/*Vengono selezionati tutti gli h1 che appartengono a div*/
+/*div h1{
+  color: #f00;
+}*/
+
+/*Vengono selezionati i children che appartengono a div e non i discendenti*/
+/*div > h1{
+color: #1782d9;
+}*/
+
+/*Viene selezionato l'elemento adiacente i sibling nel div*/
+div + h1{
+  color: #d41d14;
+}
+
+/*Vengono selezionati tutti gli elementi adiacenti i sibling nel div*/
+div + h1{
+/*div ~ h1{
+  color: #1f820f;
+}*/
+
+</style>
+
+ </head>
+
+ <body>
+
+   <h1>I selettori con CSS</h1>
+
+<div>
+<h1>Facciamo degli esempi</h1>
+<h1>Facciamo degli esempi</h1>
+<span><h1>Titolo nel paragrafo</h1></span>
+
+
+<p class="generale">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <p class="generale grande">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p class="generale">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<h1>Facciamo degli esempi</h1>
+<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Excepteur sint occaecat cupidatat non proident,
+  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ <h1>Altro titolo</h1>
+ </body>
+
+ </html>
