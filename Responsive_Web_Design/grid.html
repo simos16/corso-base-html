@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grid System</title>
+<style>
+
+*{box-sizing: border-box;}
+
+body,html{margin:0;}
+header{margin:0; width: 100%}
+.logo{width: 25%; background-color: #6f84ff; float: left; padding: 10px;}
+.heading{width: 75%; background-color: #ffb612; float: left; padding: 10px;}
+
+/* Sistema a 12 colonne - 12 colonne = 100% | 1 colonna = 100 / 12 = 8.33% */
+.colonna{width: 8.33%; background-color: #cc56dd; border-right: 1px solid #ddd; float: left; height: 150px; padding:10px;}
+
+.sidebar-left, .sidebar-right{width: 25%; height: 400px; float: left; padding: 10px;}
+
+.content{width:50%; background-color: #ccc; height: 400px; float: left; padding: 10px; overflow: auto;}
+
+/* proprietà overflow: visible | initial | hidden | scroll | auto */
+
+
+img{max-width: 100%;}
+
+h4,p{margin:0;}
+
+footer{width: 100%; margin: 0}
+
+.copy{background-color: #ff6b12; float: left; width: 100%; text-align: center; height: 90px; padding-top: 15px; border-top: 3px solid #6f84ff;}
+
+</style>
+
+  </head>
+  <body>
+<header>
+<div class="logo">LOGO</div>
+<div class="heading"><h4>Questo è un layout responsivo</h4></div>
+</header>
+
+<!-- Sistema  a 12 colonne -->
+<div class="colonna">COL1</div>
+<div class="colonna">COL2</div>
+<div class="colonna">COL3</div>
+<div class="colonna">COL4</div>
+<div class="colonna">COL5</div>
+<div class="colonna">COL6</div>
+<div class="colonna">COL7</div>
+<div class="colonna">COL8</div>
+<div class="colonna">COL9</div>
+<div class="colonna">COL10</div>
+<div class="colonna">COL11</div>
+<div class="colonna" style="border-right:none">COL12</div>
+
+<!-- Colonne eccedenti il 100% -->
+<!-- <div class="colonna">COL13</div>
+<div class="colonna">COL14</div> -->
+
+<div class="sidebar-left">
+<ul>
+<li>LINK</li>
+<li>LINK</li>
+<li>LINK</li>
+</ul>
+</div>
+
+<div class="content"><h1>Titolo</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="sidebar-right">
+<h3>Happy Farm</h3>
+<img src="sfondo.jpg">
+</div>
+
+<footer>
+<div class="copy">Copyright del mio layout</div>
+
+</footer>
+
+  </body>
+</html>

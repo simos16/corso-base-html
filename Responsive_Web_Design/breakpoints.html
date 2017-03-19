@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Breakpoint</title>
+<style>
+
+body{background-color: #f00;}
+h1{color: #fff;}
+
+#desktop, #netbook, #tablet, #smartphone {visibility: hidden;}
+
+
+
+/* Media Queries*/
+
+@media  (min-width: 480px){
+
+body{background-color: #8aa51a;}
+#smartphone{visibility: visible;}
+#smartphone-small{visibility: hidden;}
+}
+
+@media  (min-width: 768px){
+
+body{background-color: #6f84ff;}
+#smartphone{visibility: hidden;}
+#tablet{visibility: visible;}
+}
+
+@media  (min-width: 1024px){
+
+body{background-color: #ffb612;}
+#tablet{visibility: hidden;}
+#netbook{visibility: visible;}
+
+}
+
+@media  (min-width: 1200px){
+
+body{background-color: #ccc;}
+#netbook{visibility: hidden;}
+#desktop{visibility: visible;}
+}
+
+/*@media all | screen  and (min-width: 1200px){
+
+body{background-color: #ccc;}
+#netbook{visibility: hidden;}
+#desktop{visibility: visible;}
+}*/
+
+
+</style>
+
+  </head>
+  <body>
+<div><h1>COSA SUCCEDE SE RIDIMENSIONI IL BROWSER?</h1></div>
+
+<div id="desktop"><h1>BREAKPOINT A 1200PX</h1></div>
+<div id="netbook"><h1>BREAKPOINT A 1024PX</h1></div>
+<div id="tablet"><h1>BREAKPOINT A 768PX</h1></div>
+<div id="smartphone"><h1>BREAKPOINT A 480PX</h1></div>
+<div id="smartphone-small"><h1>BREAKPOINT INFERIORE A 480PX</h1></div>
+
+
+  </body>
+</html>
